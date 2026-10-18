@@ -10,6 +10,15 @@
     <script src="program.js" defer></script>
   </head>
   <body>
+    <nav class="program-nav" aria-label="Program sections" hidden>
+      <div class="program-nav-inner">
+        <div class="section-control">
+          <label for="section-picker">Follow along</label>
+          <select id="section-picker"><option value="">Jump to a ceremony section</option></select>
+        </div>
+        <button id="toggle-sections" type="button">Expand all sections</button>
+      </div>
+    </nav>
     <main>
       <header class="welcome">
         <p class="eyebrow">Together with our favorite people</p>
@@ -22,11 +31,6 @@
       <section class="program" aria-labelledby="program-heading">
         <div class="section-heading"><span aria-hidden="true"></span><h2 id="program-heading">The program</h2><span aria-hidden="true"></span></div>
         <p id="draft-message" class="draft">Our program is taking shape. Please check back for the details of our day.</p>
-        <nav class="program-nav" aria-label="Program sections" hidden>
-          <label for="section-picker">Follow along</label>
-          <select id="section-picker"><option value="">Jump to a ceremony section</option></select>
-          <button id="toggle-sections" type="button">Expand all sections</button>
-        </nav>
         <ol id="events" class="events"></ol>
       </section>
 

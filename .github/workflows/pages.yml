@@ -27,6 +27,7 @@ jobs:
         run: |
           mkdir _site
           cp index.html styles.css program.js program.json _site/
+          if [ -d assets ]; then cp -R assets _site/; fi
       - uses: actions/upload-pages-artifact@v3
         with:
           path: _site

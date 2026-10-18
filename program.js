@@ -23,7 +23,13 @@ async function loadProgram() {
     draft.textContent = program.draftMessage || '';
     draft.hidden = !program.draftMessage;
     const picker = document.getElementById('section-picker');
-    document.querySelector('.program-nav').hidden = events.length === 0;
+    const navigation = document.querySelector('.program-nav');
+    navigation.hidden = events.length === 0;
+    const updateNavHeight = () => {
+      document.documentElement.style.setProperty('--nav-height', `${navigation.getBoundingClientRect().height}px`);
+    };
+    updateNavHeight();
+    new ResizeObserver(updateNavHeight).observe(navigation);
     for (const [index, event] of events.entries()) {
       const item = document.createElement('li');
       const section = document.createElement('details');
@@ -40,6 +46,30 @@ async function loadProgram() {
         top.append(time);
       }
       section.append(top);
+      if (event.image) {
+        const figure = document.createElement('figure');
+        figure.className = 'event-image';
+        const image = document.createElement('img');
+        image.src = event.image.src;
+        image.alt = event.image.alt;
+        image.loading = 'lazy';
+        image.decoding = 'async';
+        image.width = event.image.width;
+        image.height = event.image.height;
+        figure.append(image);
+        const caption = document.createElement('figcaption');
+        if (event.image.caption) caption.append(`${event.image.caption} `);
+        const source = document.createElement('a');
+        source.href = event.image.source;
+        source.textContent = `Photo: ${event.image.author}`;
+        caption.append(source, ' · ');
+        const license = document.createElement('a');
+        license.href = event.image.licenseUrl;
+        license.textContent = event.image.license;
+        caption.append(license);
+        figure.append(caption);
+        section.append(figure);
+      }
       const paragraphs = event.paragraphs || (event.detail ? [event.detail] : []);
       for (const text of paragraphs) {
         const detail = document.createElement('p');

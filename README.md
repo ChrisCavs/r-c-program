@@ -23,6 +23,12 @@ Import notes: the source's section order and wording are retained. A duplicated 
 
 The website uses a reviewed copy of the program. It does not automatically sync changes from Google Docs. Only put information in this repository that you want publicly visible.
 
+The section picker stays fixed at the top of the screen. Jumping to a section opens it and positions the heading below the navigation. Expand/collapse icons occupy a consistent right-hand column, including on narrow screens.
+
+## Section images
+
+Each section supports at most one optional `image` object. Use locally stored files under `assets/` with a verified reuse license; the Pages workflow includes that directory. Include `src`, descriptive `alt`, `width`, `height`, `author`, `source` (original image page URL), `license`, and `licenseUrl`; `caption` is optional. Images load lazily and display linked photographer and license credits. Do not describe third-party ceremony images as photographs of our wedding.
+
 ## Publish on GitHub Pages
 
 1. Push these files to the `main` branch of `ChrisCavs/r-c-program`.
