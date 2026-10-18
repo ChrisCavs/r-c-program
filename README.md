@@ -29,6 +29,8 @@ The section picker stays fixed at the top of the screen. Jumping to a section op
 
 Each section supports at most one optional `image` object. Use locally stored files under `assets/` with a verified reuse license; the Pages workflow includes that directory. Include `src`, descriptive `alt`, `width`, `height`, `author`, `source` (original image page URL), `license`, and `licenseUrl`; `caption` is optional. Images load lazily and display linked photographer and license credits. Do not describe third-party ceremony images as photographs of our wedding.
 
+Three illustrative photographs accompany The Mandap, Lighting the Sacred Fire, and The Exchange of Garlands. Their original titles, photographers, source pages, licenses, and resizing notes are recorded in [IMAGE-CREDITS.md](IMAGE-CREDITS.md). All images are served locally, so viewing the program does not require contacting an external image host.
+
 ## Publish on GitHub Pages
 
 1. Push these files to the `main` branch of `ChrisCavs/r-c-program`.

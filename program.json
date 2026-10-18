@@ -15,7 +15,18 @@
       "paragraphs": [
         "The ceremonial altar is called the mandap, a sacred space where the wedding will take place, symbolizing the universe and cosmos. As the couple enters the mandap, they symbolically step away from the outside world and into a space where they will build their marriage.",
         "For this reason, the parents from both sides are seated near the pillars, symbolizing their guidance and foundational support as the couple begins this new chapter. By standing under these four “pillars,” the couple acknowledges that their new family is built directly upon the strength and blessings of their lineage."
-      ]
+      ],
+      "image": {
+        "src": "assets/images/mandap.jpg",
+        "alt": "A flower-covered mandap with four pillars and seating beneath its canopy.",
+        "width": 1000,
+        "height": 708,
+        "author": "Jovika",
+        "source": "https://commons.wikimedia.org/wiki/File:HinduMandap.jpg",
+        "license": "CC BY-SA 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+        "caption": "A flower-decorated mandap, shown as an illustration of the ceremonial setting. Resized for web."
+      }
     },
     {
       "title": "Vishnu and Lakshmi",
@@ -101,7 +112,18 @@
         "Grains represent growth and transformation",
         "As the offerings disappear into the flames, they symbolize letting go of anger, greed, pride, fear, and attachment—making space for greater wisdom, love, and understanding.",
         "For the bride and groom, Agni offers a powerful reminder that marriage is a journey of transformation: letting go of “I” and embracing “we,” growing beyond the selves they once knew and choosing to build something stronger together."
-      ]
+      ],
+      "image": {
+        "src": "assets/images/sacred-fire.jpg",
+        "alt": "A bright sacred fire burns as a couple participates in a Hindu wedding ritual.",
+        "width": 1000,
+        "height": 750,
+        "author": "Paolo Crosetto",
+        "source": "https://commons.wikimedia.org/wiki/File:Fire_rituals_at_a_Hindu_Wedding,_Orissa_India.jpg",
+        "license": "CC BY-SA 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+        "caption": "A sacred-fire ritual at a Hindu wedding in Odisha, shown as an illustration. Resized for web."
+      }
     },
     {
       "title": "Mangal Pheras — The Seven Sacred Circles",
@@ -205,7 +227,18 @@
         "The couple exchanges floral garlands, symbolizing mutual acceptance.",
         "Derived from the Sanskrit words var (groom) and mala (garland), literally refers to “the garland of the groom.”",
         "The tradition is also connected to the practice of Swayamvara, where a bride would choose her partner by placing a garland around his neck — a gesture of agency, honor, and choice."
-      ]
+      ],
+      "image": {
+        "src": "assets/images/flower-garlands.jpg",
+        "alt": "Close-up of orange marigold flowers strung into garlands.",
+        "width": 750,
+        "height": 1000,
+        "author": "SnapMeUp",
+        "source": "https://commons.wikimedia.org/wiki/File:Marigold_Flowers_as_garland.jpg",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+        "caption": "Marigold garlands, illustrating the flowers used in ceremonial traditions. Resized for web."
+      }
     },
     {
       "title": "Vidaai & Grihapravesh — Farewell and Welcome",
