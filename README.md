@@ -29,7 +29,9 @@ The section picker stays fixed at the top of the screen. Jumping to a section op
 
 Each section supports at most one optional `image` object. Use locally stored files under `assets/` with a verified reuse license; the Pages workflow includes that directory. Include `src`, descriptive `alt`, `width`, `height`, `author`, `source` (original image page URL), `license`, and `licenseUrl`; `caption` is optional. Images load lazily and display linked photographer and license credits. Do not describe third-party ceremony images as photographs of our wedding.
 
-Three illustrative photographs accompany The Mandap, Lighting the Sacred Fire, and The Exchange of Garlands. Their original titles, photographers, source pages, licenses, and resizing notes are recorded in [IMAGE-CREDITS.md](IMAGE-CREDITS.md). All images are served locally, so viewing the program does not require contacting an external image host.
+Fifteen sections include illustrative images, including actual ceremony photographs for varmala, kanyadaan, gathbandhan, pheras, Saptapadi, sindoor, and mangalsutra. The Vishnu and Lakshmi section uses historic artwork, labeled as such. All remain limited to one image per section. Sections without a suitable verified image remain text-only: Var Puja, The Offering of Parched Rice, The Seven Vows, Surya Puja, Touching the Heart, and The Shift to the Heart.
+
+Original titles, creators, source pages, licenses, and resizing notes are recorded in [IMAGE-CREDITS.md](IMAGE-CREDITS.md). All images are served locally, so viewing the program does not require contacting an external image host. Set optional `creditLabel` to `Artwork` for artwork; photographs use `Photo` by default. Optional `title` preserves the original source title in the credit link tooltip.
 
 ## Publish on GitHub Pages
 
@@ -38,4 +40,4 @@ Three illustrative photographs accompany The Mandap, Lighting the Sacred Fire, a
 3. The **Publish wedding program** workflow deploys every push to `main`; it can also be run manually from Actions.
 4. After a successful deployment, the expected site address is `https://chriscavs.github.io/r-c-program/` (unless a custom domain is configured).
 
-The workflow uploads only the four public site files. No credentials belong in the site or program file.
+The workflow uploads the four public site files and the assets directory. No credentials belong in the site or program file.

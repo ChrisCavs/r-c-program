@@ -61,7 +61,8 @@ async function loadProgram() {
         if (event.image.caption) caption.append(`${event.image.caption} `);
         const source = document.createElement('a');
         source.href = event.image.source;
-        source.textContent = `Photo: ${event.image.author}`;
+        source.textContent = `${event.image.creditLabel || 'Photo'}: ${event.image.author}`;
+        if (event.image.title) source.title = event.image.title;
         caption.append(source, ' · ');
         const license = document.createElement('a');
         license.href = event.image.licenseUrl;
